@@ -1,0 +1,23 @@
+Open Terminal and input:
+● pip install Django
+● django-admin (a list of available commands appears)
+● django-admin startproject my_site (creating a project)
+______________________________________________________________________________________________
+
+The directory <my_site> appears into root directory. That directory <my_site> contains an inner utility
+file <manage.py> and configurations package <my_site> which contains:
+● <__init__.py>  - auxiliary file
+● <asgi.py>, <wsgi> - the modules which bound the package with server
+● <settings.py> - comtains configurations of DB
+● <urls.py> - a module with routes of the project
+______________________________________________________________________________________________
+
+Let's launch server
+Open Terminal and input:
+● cd my_site (go to the our project directory)
+● python manage.py runserver
+server launches by this address: http://127.0.0.1:8000/
+where 127.0.0.1 in local address of local machine, port 8000
+● control + C  (interrupt connection)
+● python manage.py runserver 4000 (assign port 4000, as example)
+● python manage.py runserver 1.2.3.4:4000 (completely change the address, as example)
