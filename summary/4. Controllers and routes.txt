@@ -32,9 +32,6 @@ ________________________________________________________________________________
 попасть в Django administration. Этот адрес нам доступен, так как он есть в списке адресов в модуле <urls.py>. Если же
 прямо сейчас попытаемся ввести адрес нашего приложения http://127.0.0.1:8000/news/, то мы получим ошибку 404, так как
 нашего приложения еще нет в списке адресов (маршрутизатор не знает о таком адресе).
-Далее все действия и комментарии см здесь:
-https://github.com/ervand7/Self_study_of_django/blob/master/my_site/news/views.py
-https://github.com/ervand7/Self_study_of_django/blob/master/my_site/my_site/urls.py
-https://github.com/ervand7/Self_study_of_django/blob/master/my_site/news/urls.py
+
 
 
