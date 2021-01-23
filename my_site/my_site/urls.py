@@ -13,7 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from news.views import *  # чтобы не импортировать по отдельности каждую функцию из views, ставим *
@@ -64,3 +65,6 @@ urlpatterns = [
     path('news/', include('news.urls'))
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA__ROOT)
