@@ -14,8 +14,7 @@ http://127.0.0.1:8000/news/test/, и для такого адреса http://127
 """
 
 urlpatterns = [
-    path('', index),
-    path('test/', test),
-
+    path('', index)
+    # path('test/', test)  # Это у нас только для начальных уроков было.
 ]
 
