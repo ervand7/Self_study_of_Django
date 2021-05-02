@@ -1,0 +1,2 @@
+ ● https://django.fun
+ ● https://djbook.ru/rel1.9/index.html#

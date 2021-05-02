@@ -2,8 +2,8 @@ Architectural pattern MVC.
 В Django MVC называется MTV.
 
 MVC = MTV
-Model = Model (responsible for storing data)
-View = Template (responsible for pretty display data)
+Model      = Model (responsible for storing data)
+View       = Template (responsible for pretty display data)
 Controller = View (acting a connecting link between person and View)
 _____________________________________________________________________
 Пример:

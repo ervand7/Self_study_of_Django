@@ -6,41 +6,41 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('news', '0001_initial'),
+        ('news_project', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='news',
+            name='news_project',
             options={'ordering': ['created_at'], 'verbose_name': 'Новость', 'verbose_name_plural': 'Новости'},
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='content',
             field=models.TextField(blank=True, verbose_name='Контент'),
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='created_at',
             field=models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации'),
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='is_published',
             field=models.BooleanField(default=True, verbose_name='Опубликовано'),
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='photo',
             field=models.ImageField(blank=True, upload_to='photos/%Y/%m/%d/', verbose_name='Фото'),
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='title',
             field=models.CharField(max_length=150, verbose_name='Наименование'),
         ),
         migrations.AlterField(
-            model_name='news',
+            model_name='news_project',
             name='updated_at',
             field=models.DateTimeField(auto_now=True, verbose_name='Обновлено'),
         ),

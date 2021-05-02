@@ -1,19 +1,20 @@
 1) Create an app
 Open Terminal and input:
-● cd my_site (move to uor directory)
-● python manage.py startapp news (now we are creating a news app)
-Let's open our directory <news> and look content& Besides <migrations> there are:
-<admin.py> - module of admin configurations. Here will be our registered apps
-<apps.py> - module app configurations
-<models.py> - file where app modEls will be stored
-<tests.py>
-<views.py> - file where app controllers  will be stored
+● cd my_site
+● python manage.py startapp news
+now we are creating a news app
+Let's open our directory <news_project> and look content. Besides <migrations> there are:
+<admin.py>   - module of admin configurations. Here will be our registered apps
+<apps.py>    - module app configurations
+<models.py>  - file where app modEls will be stored
+<tests.py>   - module with tests
+<views.py>   - file where app controllers  will be stored
 ____________________________________________________________________________
 
 2) Register our app
-● go my_site -> settings
+● go <configs> -> settings
 ● write in the last item:
-{news}.{apps}.{class name from <news> -> <apps>}
+{news}.{apps}.{class name from <news_project.apps>}
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

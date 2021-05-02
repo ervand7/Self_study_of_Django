@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('news', '0002_auto_20210124_1215'),
+        ('news_project', '0002_auto_20210124_1215'),
     ]
 
     operations = [
@@ -24,8 +24,8 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.AddField(
-            model_name='news',
+            model_name='news_project',
             name='category',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='news.category'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='news_project.category'),
         ),
     ]
